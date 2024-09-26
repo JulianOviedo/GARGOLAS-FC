@@ -1,11 +1,10 @@
-import { Box, Typography } from "@mui/material";
+import Footer from "@/components/Footer";
+import Box from "@mui/material/Box";
 
 export default function Home() {
   return (
-    <Box>
-      <Typography>
-        VAMO LAS GARGOLAS
-      </Typography>
+    <Box component='main'>
+      <Footer/>
     </Box>
   );
 }
