@@ -18,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link key={font} rel="preload" href={font} as="font" crossOrigin="" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico"></link>
         <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
       </head>
       <ThemeClientProvider>
