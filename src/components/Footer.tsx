@@ -72,7 +72,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
       component="footer"
       sx={[
         {
-          backgroundColor: "black",
+          backgroundColor: "common.black",
         },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
@@ -161,7 +161,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
           }}
           src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=sport%20360+(sport%20360%20canchas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
         >
-          <a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a>
+          {/* <a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a> */}
         </Box>
         <Typography
           component="span"
