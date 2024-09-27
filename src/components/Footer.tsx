@@ -153,6 +153,16 @@ const Footer: React.FC<Props> = ({ sx }) => {
           ))}
         </Box>
         <Box component="hr" />
+        <Box
+          component="iframe"
+          sx={{
+            width: { xxs: "100%" },
+            height: 300,
+          }}
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=sport%20360+(sport%20360%20canchas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+        >
+          <a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a>
+        </Box>
         <Typography
           component="span"
           color="white"
