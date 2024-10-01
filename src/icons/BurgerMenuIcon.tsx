@@ -20,9 +20,7 @@ const BurgerMenuIcon: React.FC<Props> = ({sx}) => {
     >
       <Box component="g">
         <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="5.5" />
-
         <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="2.5" />
-
         <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="8.5" />
       </Box>
     </Box>

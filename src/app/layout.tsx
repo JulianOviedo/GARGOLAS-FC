@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import ThemeClientProvider from "@/theme";
+import { Analytics } from "@vercel/analytics/react"
 import NavBar from "@/components/NavBar";
 
 export const metadata: Metadata = {
@@ -23,6 +24,7 @@ export default function RootLayout({
         <meta httpEquiv="Content-Type" content="text/html" charSet="utf-8" />
       </head>
       <ThemeClientProvider>
+      <Analytics/>
         <body>
           <NavBar />
           {children}
