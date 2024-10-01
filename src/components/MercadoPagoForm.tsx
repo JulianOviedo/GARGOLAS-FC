@@ -62,8 +62,11 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
           label="DNI"
           placeholder="396783726"
         />
-        <Button variant="contained" size="large" type="submit">
+        <Button variant="contained" size="large" type="submit" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489591ec40189613888f00286" target="_blank"> 
           Quiero ser Socio
+        </Button>
+        <Button variant="contained" size="large" type="submit" href="https://link.mercadopago.com.ar/gargolasfc" target="_blank">
+          Quiero Donar
         </Button>
       </Box>
     </Container>

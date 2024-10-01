@@ -27,6 +27,13 @@ const PreFooter:React.FC<Props> = () => {
             }}>
                 Sumate y Apoyanos en este Hermoso Proyecto
             </Typography>
+            <CurvedArrow sx={{
+                position: 'absolute',
+                top: 50,
+                transform: 'rotate(180deg)',
+                height: 150,
+                left: 180,
+            }}/>
             <Button variant="contained" size="large" sx={{
                 maxWidth: 150
             }}>
@@ -42,13 +49,6 @@ const PreFooter:React.FC<Props> = () => {
             }}>
             <Image fill src="/images/julianpateando.png" alt="Gargolas Futbol Club" />
             </Box>
-            <CurvedArrow sx={{
-                position: 'absolute',
-                top: 50,
-                transform: 'rotate(180deg)',
-                height: 150,
-                right: 120,
-            }}/>
         </Container>
     )
 }
