@@ -25,7 +25,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
           mb: 4,
         }}
       >
-        CONFIAN EN NOSOTROS
+        CONFIAN <br /> EN NOSOTROS
       </Typography>
       <Box
         sx={[{
