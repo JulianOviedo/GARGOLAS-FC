@@ -11,7 +11,8 @@ const PreFooter:React.FC<Props> = () => {
     return (
         <Container component="section" sx={{
             backgroundColor: "#1B1B1B",
-            position: 'relative'
+            position: 'relative',
+            mt: 12,
         }}>
             <Box sx={{
                 display: 'flex',
