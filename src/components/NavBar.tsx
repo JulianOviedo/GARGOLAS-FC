@@ -9,8 +9,8 @@ import Menu from "@mui/material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
-import MenuIcon from "@mui/icons-material/Menu";
 import Logo from "./Logo";
+import BurgerMenuIcon from "@/icons/BurgerMenuIcon";
 
 const pages = ["Asociate", "Quienes Somos", "Contacto"];
 
@@ -59,7 +59,7 @@ const NavBar: React.FC = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <BurgerMenuIcon/>
             </IconButton>
             <Menu
               id="menu-appbar"
