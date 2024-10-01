@@ -13,23 +13,29 @@ type Props = {
 const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
   return (
     <Container component="section" sx={sx}>
-        <Box sx={{
-            display: 'flex',
-            flexDirection: 'column',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            mb: -3
-        }}>
-            <Typography component="h2" color="primary.main" sx={{
-                fontSize: 30,
-                fontWeight: "bolder",
-                textAlign: "center",
-                mb: -5
-            }}>
-                SUMATE A NUESTRA PASION
-            </Typography>
-        <MercadoPagoIcon/>
-        </Box>
+      <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+          mb: -3,
+        }}
+      >
+        <Typography
+          component="h2"
+          color="primary.main"
+          sx={{
+            fontSize: 30,
+            fontWeight: "bolder",
+            textAlign: "center",
+            mb: -5,
+          }}
+        >
+          SUMATE A NUESTRA PASION
+        </Typography>
+        <MercadoPagoIcon />
+      </Box>
       <Box
         component="form"
         sx={{
@@ -62,10 +68,22 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
           label="DNI"
           placeholder="396783726"
         />
-        <Button variant="contained" size="large" type="submit" href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489591ec40189613888f00286" target="_blank"> 
+        <Button
+          variant="contained"
+          size="large"
+          type="submit"
+          href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489591ec40189613888f00286"
+          target="_blank"
+        >
           Quiero ser Socio
         </Button>
-        <Button variant="contained" size="large" type="submit" href="https://link.mercadopago.com.ar/gargolasfc" target="_blank">
+        <Button
+          variant="contained"
+          size="large"
+          type="submit"
+          href="https://link.mercadopago.com.ar/gargolasfc"
+          target="_blank"
+        >
           Quiero Donar
         </Button>
       </Box>
