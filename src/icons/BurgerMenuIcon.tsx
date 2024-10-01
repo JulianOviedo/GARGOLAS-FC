@@ -10,8 +10,8 @@ const BurgerMenuIcon: React.FC<Props> = ({sx}) => {
   return (
     <Box
       component="svg"
-      width="48px"
-      height="48px"
+      width="24px"
+      height="24px"
       viewBox="0 0 12 12"
       enableBackground="new 0 0 12 12"
       version="1.1"
@@ -19,11 +19,11 @@ const BurgerMenuIcon: React.FC<Props> = ({sx}) => {
       sx={sx}
     >
       <Box component="g">
-        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="5.5" />
+        <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="5.5" />
 
-        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="2.5" />
+        <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="2.5" />
 
-        <rect fill="#1D1D1B" height="1" width="11" x="0.5" y="8.5" />
+        <rect fill="#FFFFFF" height="1" width="11" x="0.5" y="8.5" />
       </Box>
     </Box>
   );
