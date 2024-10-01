@@ -2,6 +2,7 @@ import { Button, SxProps, Theme, Typography } from "@mui/material"
 import Box from "@mui/material/Box"
 import Container from "./Container"
 import Image from "next/image"
+import CurvedArrow from "@/icons/branding/CurvedArrow"
 
 type Props = {
     sx?: SxProps<Theme>
@@ -34,13 +35,20 @@ const PreFooter:React.FC<Props> = () => {
             </Box>
             <Box sx={{
                 position: 'absolute',
-                right: 0,
+                right: -10,
                 top: -230,
                 width: 200,
                 height: 400,
             }}>
             <Image fill src="/images/julianpateando.png" alt="Gargolas Futbol Club" />
             </Box>
+            <CurvedArrow sx={{
+                position: 'absolute',
+                top: 50,
+                transform: 'rotate(180deg)',
+                height: 150,
+                right: 120,
+            }}/>
         </Container>
     )
 }

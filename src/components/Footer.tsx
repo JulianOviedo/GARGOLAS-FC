@@ -174,7 +174,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
           }}
         >
           © All right reserved | Desinged and developed by{" "}
-          <Link href="https://www.linkedin.com/in/julian-oviedo-17b605136/">
+          <Link href="https://www.linkedin.com/in/julian-oviedo-17b605136/" color="primary.light">
             Julian Oviedo
           </Link>
         </Typography>

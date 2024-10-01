@@ -32,13 +32,17 @@ const theme = createTheme({
       white: '#FFFFFF',
       black: '#343434',
     },
+    background: {
+      default: '#ebedff'
+    },
     primary: {
-      'main' : '#31306D'
+      'main' : '#31306D',
+      'light' : '#60607d'
     },
     secondary: {
       'main': '#FFFFFF',
       'light': '#A1A1A1',
-      'dark': '#5E5E5E'
+      'dark': '#5E5E5E',
     }
   }
 });

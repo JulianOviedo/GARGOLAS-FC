@@ -25,7 +25,7 @@ export default function RootLayout({
       </head>
       <ThemeClientProvider>
       <Analytics/>
-        <body>
+        <body style={{backgroundColor: '#ebedff'}}>
           <NavBar />
           {children}
         </body>
