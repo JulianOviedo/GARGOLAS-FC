@@ -32,7 +32,7 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
             mb: -5,
           }}
         >
-          SUMATE A NUESTRA PASION
+          Sumate a Nuestra Pasión
         </Typography>
         <MercadoPagoIcon />
       </Box>

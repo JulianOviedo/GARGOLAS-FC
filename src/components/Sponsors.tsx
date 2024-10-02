@@ -25,17 +25,16 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
           mb: 4,
         }}
       >
-        CONFIAN EN NOSOTROS
+        Confían en Nosotros
       </Typography>
       <Box
         sx={[{
-            width: '100%',
           display: "flex",
-          flexDirection: "row",
-          gap: 4,
-          overflowX: "visible",  
-          transform: { xs: 'translateX(calc(100vw))', md: 'unset' },
-          animation: { xs: 'animateContainer 8s linear forwards infinite', md: 'unset' },
+          flexDirection: {xs : 'column', md: 'row'},
+          alignItems: 'center',
+          gap: {xs: 2, md: 4},
+          transform: { md: 'translateX(calc(100vw))', xs: 'unset' },
+          animation: { md: 'animateContainer 8s linear forwards infinite', xs: 'unset' },
         },
         ...(Array.isArray(sx) ? sx : [sx]),
         {
@@ -53,7 +52,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         <Box
           sx={{
             position: "relative",
-            minWidth: 180,
+            width: 180,
             height: 60,
           }}
         >
@@ -67,7 +66,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         <Box
           sx={{
             position: "relative",
-            minWidth: 180,
+            width: 180,
             height: 60,
           }}
         >
@@ -81,7 +80,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         <Box
           sx={{
             position: "relative",
-            minWidth: 180,
+            width: 180,
             height: 60,
           }}
         >
@@ -95,7 +94,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         <Box
           sx={{
             position: "relative",
-            minWidth: 180,
+            width: 180,
             height: 60,
           }}
         >
@@ -109,7 +108,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         <Box
           sx={{
             position: "relative",
-            minWidth: 180,
+            width: 180,
             height: 60,
           }}
         >
