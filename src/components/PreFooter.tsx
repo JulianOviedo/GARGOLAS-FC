@@ -16,6 +16,7 @@ const PreFooter: React.FC<Props> = () => {
         backgroundColor: "#1B1B1B",
         position: "relative",
         mt: 12,
+        overflowX: 'clip'
       }}
     >
       <Box
