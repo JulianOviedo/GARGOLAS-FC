@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import History from "@/components/History";
 import MercadoPagoForm from "@/components/MercadoPagoForm";
+import News from "@/components/News";
 import PreFooter from "@/components/PreFooter";
 import Sponsors from "@/components/Sponsors";
 import Box from "@mui/material/Box";
@@ -11,6 +12,7 @@ export default function Home() {
       overflowX: 'clip'
     }}>
       <Sponsors />
+      <News/>
       <MercadoPagoForm
         sx={{
           mt: 20,
