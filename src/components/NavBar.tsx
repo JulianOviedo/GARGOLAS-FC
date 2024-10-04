@@ -100,7 +100,7 @@ const NavBar: React.FC = () => {
             GARGOLAS F.C.
           </Typography>
           <Logo sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: 'flex-end'}}>
             {pages.map((page) => (
               <Button
                 key={page}
