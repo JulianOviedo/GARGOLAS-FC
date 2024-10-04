@@ -5,6 +5,7 @@ import News from "@/components/News";
 import PreFooter from "@/components/PreFooter";
 import Sponsors from "@/components/Sponsors";
 import Box from "@mui/material/Box";
+import { newsData } from "./data";
 
 export default function Home() {
   return (
@@ -12,7 +13,7 @@ export default function Home() {
       overflowX: 'clip'
     }}>
       <Sponsors />
-      <News/>
+      <News newsData={newsData}/>
       <MercadoPagoForm
         sx={{
           mt: 20,
