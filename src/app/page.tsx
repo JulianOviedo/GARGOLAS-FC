@@ -12,8 +12,8 @@ export default function Home() {
     <Box component="main" sx={{
       overflowX: 'clip'
     }}>
-      <Sponsors />
       <News newsData={newsData}/>
+      <Sponsors />
       <MercadoPagoForm
         sx={{
           mt: 20,

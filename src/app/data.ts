@@ -18,7 +18,7 @@ export const newsData:New[] = [
     {
       src: "/images/gargolas-grupal-masculino.png",
       alt: "Gargolas Futbol",
-      title: "NOTICIA 1",
+      title: "Piel Nueva!",
       description: "Descripción de la primera noticia.",
       isPrimary: false,
     },
