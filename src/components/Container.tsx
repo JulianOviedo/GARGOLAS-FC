@@ -12,7 +12,7 @@ const Container: React.FC<Props> = ({ component, sx, children }) => {
   return (
     <Box
       component={component}
-      sx={[{ px: {xxs: 3, md: 10} }, ...(Array.isArray(sx) ? sx : [sx])]}
+      sx={[{ px: {xxs: 3, md: 10, xl: 30} }, ...(Array.isArray(sx) ? sx : [sx])]}
     >
       {children}
     </Box>

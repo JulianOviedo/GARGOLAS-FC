@@ -12,7 +12,7 @@ import MenuItem from "@mui/material/MenuItem";
 import Logo from "./Logo";
 import BurgerMenuIcon from "@/icons/BurgerMenuIcon";
 
-const pages = ["Asociate", "Quienes Somos", "Contacto"];
+const pages = ["Asociate","Sponsors", "Quienes Somos", "Contacto"];
 
 const NavBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
