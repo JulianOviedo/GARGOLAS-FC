@@ -25,7 +25,7 @@ const ImageWithOverlay: React.FC<{
     }}
   >
     {/* Imagen */}
-    <Image src={src} alt={alt} className="image" fill objectFit="cover" />
+    <Image src={src} alt={alt} className="image" fill objectFit="cover" priority/>
     {/* Título superpuesto */}
     <Typography
       color="common.white"
