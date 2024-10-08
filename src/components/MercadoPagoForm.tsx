@@ -16,6 +16,7 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
   return (
     <Container
       component="section"
+      id="asociate-section"
       sx={[
         {
           display: { xs: "flex" },

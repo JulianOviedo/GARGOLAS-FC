@@ -11,6 +11,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
   return (
     <Box
       component="section"
+      id="sponsors-section"
       sx={{
         overflow: "clip",
       }}

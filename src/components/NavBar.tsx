@@ -12,7 +12,15 @@ import MenuItem from "@mui/material/MenuItem";
 import Logo from "./Logo";
 import BurgerMenuIcon from "@/icons/BurgerMenuIcon";
 
-const pages = ["Asociate","Sponsors", "Quienes Somos", "Contacto"];
+// Importamos el Link de react-scroll
+import { Link as ScrollLink } from "react-scroll";
+
+const pages = [
+  { name: "Asociate", id: "asociate-section" },
+  { name: "Sponsors", id: "sponsors-section" },
+  { name: "Quienes Somos", id: "about-section" },
+  { name: "Contacto", id: "contact-section" },
+];
 
 const NavBar: React.FC = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(
@@ -28,9 +36,7 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <AppBar position="sticky" sx={{
-      top: 0
-    }}>
+    <AppBar position="sticky" sx={{ top: 0 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Logo sx={{ display: { xxs: "none", md: "flex" }, mr: 1 }} />
@@ -50,6 +56,7 @@ const NavBar: React.FC = () => {
             GARGOLAS FC
           </Typography>
 
+          {/* Menú para mobile */}
           <Box sx={{ flexGrow: 1, display: { xxs: "flex", md: "none" } }}>
             <IconButton
               size="large"
@@ -59,7 +66,7 @@ const NavBar: React.FC = () => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <BurgerMenuIcon/>
+              <BurgerMenuIcon />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -78,12 +85,23 @@ const NavBar: React.FC = () => {
               sx={{ display: { xxs: "block", md: "none" } }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography sx={{ textAlign: "center" }}>{page}</Typography>
+                <MenuItem key={page.id} onClick={handleCloseNavMenu}>
+                  <ScrollLink
+                    to={page.id} // ID de la sección a la que hace scroll
+                    smooth={true}
+                    duration={900}
+                    offset={-70} // Ajustar el offset si la cabecera tapa la sección
+                    onClick={handleCloseNavMenu}
+                    style={{ cursor: "pointer", textAlign: "center" }}
+                  >
+                    <Typography>{page.name}</Typography>
+                  </ScrollLink>
                 </MenuItem>
               ))}
             </Menu>
           </Box>
+
+          {/* Título para mobile */}
           <Typography
             variant="h5"
             noWrap
@@ -101,16 +119,25 @@ const NavBar: React.FC = () => {
           >
             GARGOLAS F.C.
           </Typography>
+
+          {/* Logo para mobile */}
           <Logo sx={{ display: { xxs: "flex", md: "none" }, mr: 1 }} />
-          <Box sx={{ flexGrow: 1, display: { xxs: "none", md: "flex" }, justifyContent: 'flex-end'}}>
+
+          {/* Menú para desktop */}
+          <Box sx={{ flexGrow: 1, display: { xxs: "none", md: "flex" }, justifyContent: "flex-end" }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+              <ScrollLink
+                key={page.id}
+                to={page.id} // ID de la sección a la que hace scroll
+                smooth={true}
+                duration={900}
+                offset={-70} // Ajustar el offset si la cabecera tapa la sección
+                style={{ cursor: "pointer" }}
               >
-                {page}
-              </Button>
+                <Button sx={{ my: 2, color: "white", display: "block" }}>
+                  {page.name}
+                </Button>
+              </ScrollLink>
             ))}
           </Box>
         </Toolbar>
@@ -118,4 +145,5 @@ const NavBar: React.FC = () => {
     </AppBar>
   );
 };
+
 export default NavBar;

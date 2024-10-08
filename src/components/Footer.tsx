@@ -71,6 +71,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
     <>
       <Container
         component="footer"
+        id="contact-section"
         sx={[
           {
             backgroundColor: "common.black",

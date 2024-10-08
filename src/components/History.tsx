@@ -46,6 +46,7 @@ const History: React.FC<Props> = ({sx}) => {
   return (
     <Container
       component="section"
+      id="about-section"
       sx={[{
         position: "relative",
         display: "flex",
