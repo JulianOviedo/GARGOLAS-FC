@@ -28,7 +28,9 @@ const NavBar: React.FC = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="sticky" sx={{
+      top: 0
+    }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
           <Logo sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
