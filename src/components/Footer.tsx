@@ -68,118 +68,147 @@ const SOCIAL_MEDIA = [
 
 const Footer: React.FC<Props> = ({ sx }) => {
   return (
-    <Container
-      component="footer"
-      sx={[
-        {
-          backgroundColor: "common.black",
-        },
-        ...(Array.isArray(sx) ? sx : [sx]),
-      ]}
-    >
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          gap: 2,
-        }}
+    <>
+      <Container
+        component="footer"
+        sx={[
+          {
+            backgroundColor: "common.black",
+          },
+          ...(Array.isArray(sx) ? sx : [sx]),
+        ]}
       >
-        <Logo
-          sx={{
-            width: 48,
-            height: 64,
-          }}
-        />
-        {LIST_ITEMS.map((item, index) => (
-          <Box key={index} sx={{ mb: 2 }}>
-            <Typography
-              color="white"
-              sx={{
-                fontWeight: 1000,
-                fontSize: 24,
-                letterSpacing: 1,
-                mb: 1,
-              }}
-            >
-              {item.title}
-            </Typography>
-            <Box component="ul">
-              {item.subItems.map((subItem, subIndex) => (
-                <Box
-                  component="li"
-                  key={subIndex}
-                  sx={{ mb: 1, listStyle: "none" }}
-                >
-                  {subItem.link ? (
-                    <Link href={subItem.link} color="inherit" underline="hover">
-                      <Typography
-                        component="span"
-                        color="#A1A1A1"
-                        sx={{
-                          ml: 1,
-                          fontWeight: 300,
-                        }}
-                      >
-                        {subItem.subject}
-                      </Typography>
-                    </Link>
-                  ) : (
-                    <Typography
-                      color="#A1A1A1"
-                      component="span"
-                      sx={{
-                        ml: 1,
-                        fontWeight: 300,
-                      }}
-                    >
-                      {subItem.subject}
-                    </Typography>
-                  )}
-                </Box>
-              ))}
-            </Box>
-          </Box>
-        ))}
         <Box
           sx={{
             display: "flex",
+            flexDirection: { xxs: "column", sm: "row" },
             gap: 2,
+            mb: 5,
           }}
         >
-          {SOCIAL_MEDIA.map(({ href, icon }, idx) => (
-            <Link href={href} key={idx}>
-              {icon}
-            </Link>
-          ))}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              gap: 2,
+              width: { sm: "50%" },
+            }}
+          >
+            <Logo
+              sx={{
+                width: 48,
+                height: 64,
+              }}
+            />
+            {LIST_ITEMS.map((item, index) => (
+              <Box key={index} sx={{ mb: 2 }}>
+                <Typography
+                  color="white"
+                  sx={{
+                    fontWeight: 1000,
+                    fontSize: 24,
+                    letterSpacing: 1,
+                    mb: 1,
+                  }}
+                >
+                  {item.title}
+                </Typography>
+                <Box component="ul">
+                  {item.subItems.map((subItem, subIndex) => (
+                    <Box
+                      component="li"
+                      key={subIndex}
+                      sx={{ mb: 1, listStyle: "none" }}
+                    >
+                      {subItem.link ? (
+                        <Link
+                          href={subItem.link}
+                          color="inherit"
+                          underline="hover"
+                        >
+                          <Typography
+                            component="span"
+                            color="#A1A1A1"
+                            sx={{
+                              ml: 1,
+                              fontWeight: 300,
+                            }}
+                          >
+                            {subItem.subject}
+                          </Typography>
+                        </Link>
+                      ) : (
+                        <Typography
+                          color="#A1A1A1"
+                          component="span"
+                          sx={{
+                            ml: 1,
+                            fontWeight: 300,
+                          }}
+                        >
+                          {subItem.subject}
+                        </Typography>
+                      )}
+                    </Box>
+                  ))}
+                </Box>
+              </Box>
+            ))}
+            <Box
+              sx={{
+                display: "flex",
+                gap: {xxs: 2, md: 5},
+              }}
+            >
+              {SOCIAL_MEDIA.map(({ href, icon }, idx) => (
+                <Link href={href} key={idx}>
+                  {icon}
+                </Link>
+              ))}
+            </Box>
+          </Box>
+          <Box component="hr" sx={{ display: { xxs: "block", sm: "none" } }} />
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "space-around",
+              width: { xxs: "100%", sm: "50" },
+            }}
+          >
+            <Box
+              component="iframe"
+              sx={{
+                width: { xxs: "100%" },
+                height: { xxs: 300, sm: "80%" },
+              }}
+              src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=sport%20360+(sport%20360%20canchas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+            ></Box>
+          </Box>
         </Box>
-        <Box component="hr" />
-        <Box
-          component="iframe"
-          sx={{
-            width: { xxs: "100%" },
-            height: 300,
-          }}
-          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=sport%20360+(sport%20360%20canchas)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-        >
-          {/* <a href="https://www.gps.ie/car-satnav-gps/">GPS devices</a> */}
-        </Box>
+        <Box component="hr" sx={{ display: { xxs: "none", sm: "block" } }} />
         <Typography
           component="span"
           color="white"
           sx={{
+            py: 5,
             fontWeight: 100,
-            fontSize: 10,
+            fontSize: {xxs: 10, sm: 13},
             textAlign: "center",
-            mb: 2,
+            display: "flex",
+            justifyContent: "center",
           }}
         >
-          © All right reserved | Desinged and developed by{" "}
-          <Link href="https://www.linkedin.com/in/julian-oviedo-17b605136/" color="primary.light">
+          © All right reserved | Desinged and developed by&nbsp;
+          <Link
+            href="https://www.linkedin.com/in/julian-oviedo-17b605136/"
+            color="primary.light"
+          >
             Julian Oviedo
           </Link>
         </Typography>
-      </Box>
-    </Container>
+      </Container>
+    </>
   );
 };
 

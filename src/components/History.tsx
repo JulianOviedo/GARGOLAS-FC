@@ -61,6 +61,7 @@ const History: React.FC<Props> = ({sx}) => {
         <HistoryCard key={index} {...card} />
       ))}
       <Box component="span" sx={{
+        display: {xxs: 'block', md: 'none'},
         width: '5px',
         position: 'absolute',
         zIndex: -2,

@@ -36,7 +36,7 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
           zIndex: 0,
           px: 3,
           py: 4,
-          maxWidth: { xs: 325 },
+          maxWidth: { xs: 325, md: 400 },
         },
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}

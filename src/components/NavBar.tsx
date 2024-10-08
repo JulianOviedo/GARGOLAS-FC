@@ -33,14 +33,14 @@ const NavBar: React.FC = () => {
     }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Logo sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
+          <Logo sx={{ display: { xxs: "none", md: "flex" }, mr: 1 }} />
           <Typography
             noWrap
             component="a"
             href="/"
             sx={{
               mr: 2,
-              display: { xs: "none", md: "flex" },
+              display: { xxs: "none", md: "flex" },
               fontWeight: 700,
               letterSpacing: ".3rem",
               color: "inherit",
@@ -50,7 +50,7 @@ const NavBar: React.FC = () => {
             GARGOLAS FC
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box sx={{ flexGrow: 1, display: { xxs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -75,7 +75,7 @@ const NavBar: React.FC = () => {
               }}
               open={Boolean(anchorElNav)}
               onClose={handleCloseNavMenu}
-              sx={{ display: { xs: "block", md: "none" } }}
+              sx={{ display: { xxs: "block", md: "none" } }}
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
@@ -91,7 +91,7 @@ const NavBar: React.FC = () => {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
-              display: { xs: "flex", md: "none" },
+              display: { xxs: "flex", md: "none" },
               flexGrow: 1,
               fontWeight: 700,
               letterSpacing: ".3rem",
@@ -101,8 +101,8 @@ const NavBar: React.FC = () => {
           >
             GARGOLAS F.C.
           </Typography>
-          <Logo sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: 'flex-end'}}>
+          <Logo sx={{ display: { xxs: "flex", md: "none" }, mr: 1 }} />
+          <Box sx={{ flexGrow: 1, display: { xxs: "none", md: "flex" }, justifyContent: 'flex-end'}}>
             {pages.map((page) => (
               <Button
                 key={page}

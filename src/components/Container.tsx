@@ -5,14 +5,14 @@ import { ReactNode } from "react";
 type Props = {
   sx?: SxProps<Theme>;
   children: ReactNode;
-  component: "section" | "footer";
+  component: "section" | "footer" | "div";
 };
 
 const Container: React.FC<Props> = ({ component, sx, children }) => {
   return (
     <Box
       component={component}
-      sx={[{ px: 3 }, ...(Array.isArray(sx) ? sx : [sx])]}
+      sx={[{ px: {xxs: 3, md: 10} }, ...(Array.isArray(sx) ? sx : [sx])]}
     >
       {children}
     </Box>
