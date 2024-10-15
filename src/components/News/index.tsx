@@ -25,41 +25,29 @@ const News: React.FC<Props> = ({ sx, newsData }) => {
         ...(Array.isArray(sx) ? sx : [sx]),
       ]}
     >
-      {/* primera noticia (principal) */}
-      <Box sx={{ height: CONTAINER_HEIGHT / 2 }}>
-        <ImageWithOverlay
-          containerHeight={CONTAINER_HEIGHT}
-          src={newsData[0].src}
-          alt={newsData[0].alt}
-          title={newsData[0].title}
-          description={newsData[0].description}
-          isPrimary={newsData[0].isPrimary}
-        />
-      </Box>
-
-      {/* Segundas dos */}
+      {/* Grid de noticias */}
       <Box
         sx={{
-          display: "flex",
-          flexDirection: "row",
-          height: CONTAINER_HEIGHT / 4,
+          display: "grid",
+          gridTemplateColumns: { xs: "1fr", sm: "repeat(2, 1fr)" },
+          height: "100%",
         }}
       >
-        {newsData.slice(1).map((news, index) => (
+        {newsData.map((news, index) => (
           <Box
             key={index}
             sx={{
-              width: "50%",
               position: "relative",
+              height: CONTAINER_HEIGHT / 4,
             }}
           >
             <ImageWithOverlay
               containerHeight={CONTAINER_HEIGHT}
-              src={news.src}
+              image1={news.image1}
+              image2={news.image2}
               alt={news.alt}
               title={news.title}
               description={news.description}
-              isPrimary={news.isPrimary}
             />
           </Box>
         ))}

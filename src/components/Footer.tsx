@@ -69,7 +69,7 @@ const SOCIAL_MEDIA = [
 const Footer: React.FC<Props> = ({ sx }) => {
   return (
     <>
-      <Container
+      <Box
         component="footer"
         id="contact-section"
         sx={[
@@ -85,6 +85,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
             flexDirection: { xxs: "column", sm: "row" },
             gap: 2,
             mb: 5,
+            px: {xxs: 3, md: 10, xl: 30}
           }}
         >
           <Box
@@ -208,7 +209,7 @@ const Footer: React.FC<Props> = ({ sx }) => {
             Julian Oviedo
           </Link>
         </Typography>
-      </Container>
+      </Box>
     </>
   );
 };

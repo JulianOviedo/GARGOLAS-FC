@@ -10,13 +10,14 @@ type Props = {
 
 const PreFooter: React.FC<Props> = () => {
   return (
-    <Container
+    <Box
       component="section"
       sx={{
         backgroundColor: "#1B1B1B",
         position: "relative",
         mt: 12,
         overflowX: "clip",
+        px: {xxs: 3, md: 10, xl: 30}
       }}
     >
       <Box
@@ -84,7 +85,7 @@ const PreFooter: React.FC<Props> = () => {
           alt="Gargolas Futbol Club"
         />
       </Box>
-    </Container>
+    </Box>
   );
 };
 
