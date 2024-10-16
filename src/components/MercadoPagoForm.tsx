@@ -126,6 +126,7 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
         }}/>
         <Box 
         sx={{
+          display: {xxs: 'none', md: 'block'},
           width: 600,
           aspectRatio: 0.8,
           opacity: 0.8,
