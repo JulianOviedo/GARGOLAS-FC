@@ -149,7 +149,7 @@ const History: React.FC<Props> = ({ sx }) => {
       {historyCards.map((card, index) => (
         <Box
           key={index}
-          ref={(el) => (historyRefs.current[index] = el)}
+          ref={(el: HTMLDivElement | null) => {historyRefs.current[index] = el}}
           sx={(theme) => ({
             [theme.breakpoints.up('md')] : {
             ...(index % 2 === 0 ? { ml: 80 } : { mr: 80 }),
