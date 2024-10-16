@@ -118,8 +118,8 @@ const History: React.FC<Props> = ({ sx }) => {
           display: {xxs: 'none', md: 'block'},
           position: "absolute",
           top: 61,
-          left: "41%", // Centra horizontalmente
-          transform: "translateX(-50%) rotate(250deg) scaleX(-1)", // Compensa el desplazamiento y aplica las transformaciones
+          left: "41%",
+          transform: "translateX(-50%) rotate(250deg) scaleX(-1)",
           height: 400,
           width: 500,
         }}
@@ -129,8 +129,8 @@ const History: React.FC<Props> = ({ sx }) => {
           display: {xxs: 'none', md: 'block'},
           position: "absolute",
           top: 560,
-          left: "57%", // Centra horizontalmente
-          transform: "translateX(-50%) rotate(95deg)", // Compensa el desplazamiento y aplica las transformaciones
+          left: "57%",
+          transform: "translateX(-50%) rotate(95deg)",
           height: 400,
           width: 500,
         }}
@@ -140,8 +140,8 @@ const History: React.FC<Props> = ({ sx }) => {
           display: {xxs: 'none', md: 'block'},
           position: "absolute",
           top: 1000,
-          left: "41%", // Centra horizontalmente
-          transform: "translateX(-50%) rotate(250deg) scaleX(-1)", // Compensa el desplazamiento y aplica las transformaciones
+          left: "41%",
+          transform: "translateX(-50%) rotate(250deg) scaleX(-1)",
           height: 400,
           width: 500,
         }}
