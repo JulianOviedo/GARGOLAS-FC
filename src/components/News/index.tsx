@@ -48,6 +48,7 @@ const News: React.FC<Props> = ({ sx, newsData }) => {
               alt={news.alt}
               title={news.title}
               description={news.description}
+              addedAt={news.addedAt}
             />
           </Box>
         ))}

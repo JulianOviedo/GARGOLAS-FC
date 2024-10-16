@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useState } from "react";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
@@ -11,7 +11,16 @@ const ImageWithOverlay: React.FC<{
   title: string;
   description: string;
   containerHeight: number;
-}> = ({ image1, image2, alt, title, description, containerHeight }) => {
+  addedAt: string;
+}> = ({
+  image1,
+  image2,
+  alt,
+  title,
+  description,
+  containerHeight,
+  addedAt,
+}) => {
   const [currentImage, setCurrentImage] = useState(image1);
   const [nextImage, setNextImage] = useState(image2);
   const [fadeOut, setFadeOut] = useState(false);
@@ -20,12 +29,15 @@ const ImageWithOverlay: React.FC<{
     const switchImage = () => {
       setFadeOut(true);
       setTimeout(() => {
-        setCurrentImage((prevImage) => (prevImage === image1 ? image2 : image1));
+        setCurrentImage((prevImage) =>
+          prevImage === image1 ? image2 : image1
+        );
         setFadeOut(false);
       }, 500);
     };
 
-    const randomInterval = () => Math.floor(Math.random() * (20000 - 1000 + 1)) + 5000;
+    const randomInterval = () =>
+      Math.floor(Math.random() * (20000 - 1000 + 1)) + 5000;
 
     const intervalId = setInterval(switchImage, randomInterval());
 
@@ -59,7 +71,14 @@ const ImageWithOverlay: React.FC<{
           zIndex: 1,
         }}
       >
-        <Image src={currentImage} alt={alt} className="image" fill objectFit="cover" priority />
+        <Image
+          src={currentImage}
+          alt={alt}
+          className="image"
+          fill
+          objectFit="cover"
+          priority
+        />
       </Box>
 
       {/* Imagen siguiente */}
@@ -75,7 +94,14 @@ const ImageWithOverlay: React.FC<{
           zIndex: 0,
         }}
       >
-        <Image src={nextImage} alt={alt} className="image" fill objectFit="cover" priority />
+        <Image
+          src={nextImage}
+          alt={alt}
+          className="image"
+          fill
+          objectFit="cover"
+          priority
+        />
       </Box>
 
       {/* Título superpuesto */}
@@ -90,7 +116,8 @@ const ImageWithOverlay: React.FC<{
           fontSize: { xxs: 18, sm: 24 },
           fontWeight: "bolder",
           pr: 4,
-          background: "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,114,244,1) 100%)",
+          background:
+            "linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(72,114,244,1) 100%)",
           zIndex: 2,
         }}
       >
@@ -121,6 +148,22 @@ const ImageWithOverlay: React.FC<{
         }}
       >
         {description}
+      </Typography>
+
+      {/* Contenido superpuesto */}
+      <Typography
+      color="common.white"
+        sx={{
+          position: "absolute",
+          bottom: 0,
+          pr: 2,
+          right: 0,
+          fontSize: { xxs: 8, sm: 14 },
+          fontWeight: "bolder",
+          zIndex: 2,
+        }}
+      >
+        {addedAt}
       </Typography>
     </Box>
   );
