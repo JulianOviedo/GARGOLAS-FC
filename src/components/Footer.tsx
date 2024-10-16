@@ -26,11 +26,10 @@ const LIST_ITEMS: ListItem[] = [
     subItems: [
       {
         subject: "Asociate",
-        link: "#",
+        link: "https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808489591ec40189613888f00286",
       },
       {
         subject: "Entrena en nuestro predio",
-        link: "#",
       },
     ],
   },
@@ -42,10 +41,10 @@ const LIST_ITEMS: ListItem[] = [
         link: "www.google.com",
       },
       {
-        subject: "Email - julianovie234@gmail.com",
+        subject: "Email - gargolasfc@gmail.com",
       },
       {
-        subject: "Direccion - Dire de las canchas?",
+        subject: "Direccion - La SEDE JUAN COSTILLA",
       },
     ],
   },
