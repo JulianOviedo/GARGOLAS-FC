@@ -8,33 +8,33 @@ export type New = {
 
 export const newsData:New[] = [
     {
-      image1: "/images/gargolas-grupal-fem.png",
-      image2: "/images/gargolas-grupal-masculino.png",
-      alt: "Imagen de ejemplo",
-      title: "NOTICIA GARGOLERA",
+      image1: "/images/news/grupal-firmando.jpeg",
+      image2: "/images/news/grupal-campa-libre.jpg",
+      alt: "Gargolas Futbol Club - Asociacion Civil",
+      title: "SOMOS LEGALES !",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ea maxime voluptatum repellendus autem, vel harum facilis ducimus doloribus. Harum laudantium itaque dolore temporibus nostrum qui amet quibusdam, fugiat quis.",
+        "Con alegría, anunciamos que Gárgolas Football Club se ha convertido en una asociación civil. Este cambio fortalecerá nuestro compromiso con el deporte y nos permitirá acceder a recursos y financiamiento que impulsarán nuestro crecimiento. Agradecemos su apoyo y los invitamos a seguir este emocionante camino juntos. ¡Hacia nuevas metas!"
     },
     {
-      image1: "/images/gargolas-grupal-masculino.png",
-      image2: "/images/gargolas-grupal-fem.png",
-      alt: "Gargolas Futbol",
-      title: "Piel Nueva!",
-      description: "Descripción de la primera noticia.",
+      image1: "/images/news/gargolas-grupal-masculino.png",
+      image2: "/images/news/gargolas-grupal-fem.png",
+      alt: "Gargolas Futbol Club - Campeones",
+      title: "LA +30 ES DE PRIMERA",
+      description: "¡VAMOS LAS GARGOLAS! La división +30 de Gárgolas Futbol Club ha ascendido a primera división tras finalizar como punteros en el torneo. Este logro es un reflejo del esfuerzo y la dedicación de nuestro equipo. ¡Gracias a todos por su apoyo!",
     },
     {
-      image1: "/images/gargolas-grupal-masculino.png",
-      image2: "/images/gargolas-grupal-fem.png",
+      image1: "/images/news/gargolas-grupal-masculino.png",
+      image2: "/images/news/gargolas-grupal-fem.png",
       alt: "Gargolas Futbol",
-      title: "NOTICIA 2",
-      description: "Descripción de la segunda noticia.",
+      title: "NOTICIA 3",
+      description: "Descripción de la tercera noticia.",
     },
     {
-      image1: "/images/gargolas-grupal-masculino.png",
-      image2: "/images/gargolas-grupal-fem.png",
+      image1: "/images/news/gargolas-grupal-masculino.png",
+      image2: "/images/news/gargolas-grupal-fem.png",
       alt: "Gargolas Futbol",
-      title: "NOTICIA 2",
-      description: "Descripción de la segunda noticia.",
+      title: "NOTICIA 4",
+      description: "Descripción de la cuarta noticia.",
     },
   ];
   

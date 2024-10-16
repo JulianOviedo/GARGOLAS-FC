@@ -109,6 +109,7 @@ const NavBar: React.FC = () => {
             href="#app-bar-with-responsive-menu"
             sx={{
               mr: 2,
+              fontSize: 22,
               display: { xxs: "flex", md: "none" },
               flexGrow: 1,
               fontWeight: 700,
