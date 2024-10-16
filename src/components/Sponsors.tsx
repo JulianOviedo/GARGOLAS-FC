@@ -57,7 +57,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
         component="h2"
         color="primary.main"
         sx={{
-          textAlign: "left",
+          textAlign: "center",
           typography: {xxs: 'h4', sm: 'h2'},
           pt: 15,
           mb: {xxs: 8, sm: 15},
@@ -71,6 +71,7 @@ const Sponsors: React.FC<Props> = ({ sx }) => {
           flexDirection: {xxs : 'column', sm: 'row'},
           flexWrap: 'wrap',
           alignItems: 'center',
+          justifyContent: 'center',
           gap: {xxs: 6, md: 8},
         },
         ...(Array.isArray(sx) ? sx : [sx]),
