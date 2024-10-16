@@ -31,7 +31,8 @@ const PreFooter: React.FC<Props> = () => {
         <Typography
           color="common.white"
           sx={{
-            typography: { xxs: "h6", md: "h4" },
+            typography: { xxs: "h6", md: "h3" },
+            fontSize: {md: 30},
             fontWeight: 800,
             maxWidth: { xxs: 180, md: 300 },
           }}

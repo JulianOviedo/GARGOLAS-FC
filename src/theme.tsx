@@ -13,10 +13,24 @@ const ubuntu = Ubuntu({
 });
 
 const ubuntuFontFamily = `${ubuntu.style.fontFamily}, Helvetica, Arial, sans-serif`;
+const gibsonFontFamily = `Gibson, ${ubuntu.style.fontFamily}, Helvetica, Arial, sans-serif`;
 
 const theme = createTheme({
   typography: {
     fontFamily: ubuntuFontFamily,
+    h2: {
+      fontFamily: gibsonFontFamily,
+      fontSize: 48,
+      lineHeight: '56px',
+      fontWeight: 600,
+    },
+    h4: {
+      fontFamily: gibsonFontFamily,
+      fontSize: 32,
+      lineHeight: '40px',
+      fontWeight: 600,
+      letterSpacing: 'normal',
+    },
   },
   breakpoints: {
     values: {
@@ -55,3 +69,15 @@ export default function ThemeClientProvider({
 }) {
   return <ThemeProvider theme={theme}>{children}</ThemeProvider>;
 }
+
+
+// font-family: Gibson, '__Ubuntu_06520e', '__Ubuntu_Fallback_06520e', Helvetica, Arial, sans-serif;
+// font-weight: 600;
+// font-size: 2.4rem;
+// 
+
+// font-family: Gibson, '__Ubuntu_06520e', '__Ubuntu_Fallback_06520e', Helvetica, Arial, sans-serif;
+// font-weight: 600;
+// font-size: 4rem;
+// line-height: 56px;
+// letter-spacing: normal;

@@ -73,7 +73,7 @@ const History: React.FC<Props> = ({ sx }) => {
           if (index >= 0) {
             setAnimateCards((prev) => {
               const newArray = [...prev];
-              newArray[index] = true; // Cambia el estado para la tarjeta visible
+              newArray[index] = true;
               return newArray;
             });
           }
