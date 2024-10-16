@@ -112,7 +112,8 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
       <Box sx={{
         position: 'relative',
         width: '100%',
-        height: '100%'
+        height: '100%',
+        zIndex: -2,
       }}>
         <Logo sx={{
           width: {xxs: 500, sm: 800},
