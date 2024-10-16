@@ -7,6 +7,7 @@ import React from "react";
 import Container from "./Container";
 import MercadoPagoIcon from "@/icons/MercadoPagoIcon";
 import Image from "next/image";
+import Logo from "./Logo";
 
 type Props = {
   sx?: SxProps<Theme>;
@@ -19,7 +20,7 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
       id="asociate-section"
       sx={[
         {
-          display: { xs: "flex" },
+          display: 'flex',
           alignItems: "center",
           flexDirection: { xxs: "column", md: "row" },
           gap: { md: 10 },
@@ -30,7 +31,7 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
       <Box
         sx={{
           maxWidth: { xs: 480 },
-          width: "100%",
+          minWidth: {md: 480},
         }}
       >
         <Box
@@ -109,28 +110,32 @@ const MercadoPagoForm: React.FC<Props> = ({ sx }) => {
         </Box>
       </Box>
       <Box sx={{
-        display: {xxs: 'none', md: 'block'},
         position: 'relative',
         width: '100%',
         height: '100%'
       }}>
-      <Box
-        sx={{
+        <Logo sx={{
+          width: {xxs: 500, sm: 800},
+          height: 'unset',
+          aspectRatio: 1.1,
           position: "absolute",
-          width: 480,
-          aspectRatio: .3,
-          top: "50%",
+          opacity: .3,
+          top: 0,
           left: "50%",
-          transform: "translate(-50%, -60%)",
+          transform: {xxs: 'translate(-50%, -125%)', sm: "translate(-50%, -100%)", md: "translate(-50%, -60%)"}
+        }}/>
+        <Box 
+        sx={{
+          width: 600,
+          aspectRatio: 0.8,
+          opacity: 0.8,
+          position: 'absolute',
+          top: -145,
+          left: "30%"
         }}
-      >
-        <Image
-          src="/images/julianpateando.png"
-          alt="Gargolas FC"
-          sizes="100%"
-          fill
-        />
-      </Box>
+        >
+          <Image src="/images/arquera-fem.png" alt="Gargolas - Asociate" sizes="100%" fill />
+        </Box>
       </Box>
     </Container>
   );
