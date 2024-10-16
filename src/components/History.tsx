@@ -10,33 +10,33 @@ type Props = {
 
 const historyCards: HistoryCardProps[] = [
   {
-    imageSrc: "/images/julianpateando.png",
-    topImagePosition: -225,
-    leftImagePosition: 100,
+    imageSrc: "/images/history-cards/agus.png",
+    topImagePosition: -20,
+    leftImagePosition: -30,
     description:
       "Gárgolas inicia su travesía en el año 2012, gracias al inquebrantable espíritu de un grupo de apasionados por el fútbol. Con mucho olfato y determinación, se forma el primer equipo, producto de la fusión entre las promociones 2009 y 2010 del San Buenaventura y la generación del '92 de la U. Desde ese momento, la pasión por el fútbol nos ha guiado en un camino lleno de logros y aprendizajes.",
     title: "Todo comenzo...",
   },
   {
-    imageSrc: "/images/julianpateando.png",
-    topImagePosition: 0,
-    leftImagePosition: -50,
+    imageSrc: "/images/history-cards/alejo.png",
+    topImagePosition: 80,
+    leftImagePosition: 200,
     description:
       "El viaje de Gárgolas comenzó en el ámbito del Fútbol 5, donde nuestras primeras experiencias fueron forjando la identidad de un equipo que ya empezaba a soñar. Con el tiempo, pasamos al Fútbol 7 y, finalmente, nos aventuramos en el Fútbol 11. A lo largo de los años, hemos recorrido diversas canchas y compartido momentos inolvidables con jugadores que han dejado su huella. Muchos de nosotros seguimos formando parte de este hermoso equipo, unidos por la misma pasión.",
     title: "De Fútbol 5 a un sueño más grande...",
   },
   {
-    imageSrc: "/images/julianpateando.png",
-    topImagePosition: 0,
-    leftImagePosition: 20,
+    imageSrc: "/images/history-cards/enzo.png",
+    topImagePosition: 190,
+    leftImagePosition: 200,
     description:
       "Con el deseo de crecer y avanzar, decidimos dar este importante paso institucional. Creemos firmemente en la necesidad de ampliar las bases de este proyecto que hoy disfrutamos. ¿Por qué no soñar con instalaciones propias? ¿Por qué no contar con nuestra propia cancha? Y, ¿por qué no pertenecer a un campeonato oficial? Aunque parezcan metas lejanas, también lo parecía en su momento la idea de que Gárgolas se convirtiera en un club. Hoy, estas aspiraciones están más cerca que nunca.",
     title: "Apostando al futuro...",
   },
   {
-    imageSrc: "/images/julianpateando.png",
-    topImagePosition: -225,
-    leftImagePosition: 100,
+    imageSrc: "/images/history-cards/santi.png",
+    topImagePosition: 175,
+    leftImagePosition: -40,
     description:
       "Con el arranque del cobro de la cuota social, comenzamos a darle forma a todas estas palabras y sueños que compartimos. El aporte puede ser pequeño, pero recordamos que lo poco siempre es mejor que nada. Convencidos de que el trabajo colectivo siempre supera al individual, invitamos a todos a sumarse a este emocionante proyecto. Juntos, somos más fuertes, y juntos, llevaremos a Gárgolas hacia un futuro prometedor.",
     title: "Juntos en la misma dirección...",

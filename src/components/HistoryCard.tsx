@@ -67,8 +67,8 @@ const HistoryCard: React.FC<HistoryCardProps> = ({
           opacity: 0.4,
           top: topImagePosition,
           left: leftImagePosition,
-          width: 300,
-          aspectRatio: 0.5,
+          width: 200,
+          aspectRatio: .9,
         }}
       >
         <Image src={imageSrc} alt="Gargolas Football Club" sizes="100%" fill />
